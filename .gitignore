@@ -1,0 +1,17 @@
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Angular
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/cache/
+
+# Spring / Maven
+backend/target/
+
+# Env / secretos
+.env
+*.env
