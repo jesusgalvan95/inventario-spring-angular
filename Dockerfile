@@ -10,11 +10,11 @@ COPY backend/mvnw.cmd backend/mvnw.cmd
 
 # Descargar dependencias (cache)
 WORKDIR /app/backend
-RUN ./mvnw -DskipTests dependency:go-offline
+RUN mvn -DskipTests dependency:go-offline
 
 # Copiamos el código y compilamos
 COPY backend/src src
-RUN ./mvnw -DskipTests package
+RUN mvn -DskipTests package
 
 # ====== RUN ======
 FROM eclipse-temurin:21-jre
